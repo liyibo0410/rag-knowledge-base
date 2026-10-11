@@ -1,0 +1,55 @@
+2026-08-10 15:07:13.471 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['统计', '统计华北地区销售总额', '销售总额', '华北地区']
+2026-08-10 15:09:32.998 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['销售总额', '统计华北地区销售总额', '华北地区', '统计']
+2026-08-10 15:11:03.056 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['统计', '华北地区', '销售总额', '统计华北地区销售总额']
+2026-08-13 14:17:59.445 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['统计', '销售总额', '统计华北地区销售总额', '华北地区']
+2026-08-13 14:17:59.449 | ERROR    | request_id - 1 | app.agent.nodes.recall_metric:recall_metric:70 - 召回指标信息异常：'metric_qdrant_repository'
+2026-08-13 14:17:59.449 | ERROR    | request_id - 1 | app.agent.nodes.recall_value:recall_value:70 - 召回字段取值异常：'value_es_repository'
+2026-08-13 14:38:03.816 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['华北地区', '销售总额', '统计', '统计华北地区销售总额']
+2026-08-13 14:38:03.818 | ERROR    | request_id - 1 | app.agent.nodes.recall_metric:recall_metric:70 - 召回指标信息异常：'metric_qdrant_repository'
+2026-08-13 14:38:03.818 | ERROR    | request_id - 1 | app.agent.nodes.recall_value:recall_value:70 - 召回字段取值异常：'value_es_repository'
+2026-08-13 19:18:19.694 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['统计', '统计华北地区销售总额', '销售总额', '华北地区']
+2026-08-13 19:18:19.696 | ERROR    | request_id - 1 | app.agent.nodes.recall_metric:recall_metric:70 - 召回指标信息异常：'metric_qdrant_repository'
+2026-08-13 19:18:19.696 | ERROR    | request_id - 1 | app.agent.nodes.recall_value:recall_value:70 - 召回字段取值异常：'value_es_repository'
+2026-08-13 19:18:31.954 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['销售总额', '华北地区', '统计华北地区销售总额', '统计']
+2026-08-13 19:18:31.957 | ERROR    | request_id - 1 | app.agent.nodes.recall_metric:recall_metric:70 - 召回指标信息异常：'metric_qdrant_repository'
+2026-08-13 19:18:31.957 | ERROR    | request_id - 1 | app.agent.nodes.recall_value:recall_value:70 - 召回字段取值异常：'value_es_repository'
+2026-08-13 19:18:40.427 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['统计', '销售总额', '统计华北地区销售总额', '华北地区']
+2026-08-13 19:18:40.429 | ERROR    | request_id - 1 | app.agent.nodes.recall_metric:recall_metric:70 - 召回指标信息异常：'metric_qdrant_repository'
+2026-08-13 19:18:40.429 | ERROR    | request_id - 1 | app.agent.nodes.recall_value:recall_value:70 - 召回字段取值异常：'value_es_repository'
+2026-08-13 19:20:12.376 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['华北地区', '统计', '销售总额', '统计华北地区销售总额']
+2026-08-13 19:20:12.381 | ERROR    | request_id - 1 | app.agent.nodes.recall_metric:recall_metric:70 - 召回指标信息异常：'metric_qdrant_repository'
+2026-08-13 19:20:12.381 | ERROR    | request_id - 1 | app.agent.nodes.recall_value:recall_value:70 - 召回字段取值异常：'value_es_repository'
+2026-08-13 19:22:57.466 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['华北地区', '销售总额', '统计', '统计华北地区销售总额']
+2026-08-13 19:22:57.471 | ERROR    | request_id - 1 | app.agent.nodes.recall_metric:recall_metric:70 - 召回指标信息异常：'metric_qdrant_repository'
+2026-08-13 19:22:57.473 | ERROR    | request_id - 1 | app.agent.nodes.recall_value:recall_value:70 - 召回字段取值异常：'value_es_repository'
+2026-08-13 19:24:54.727 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['统计', '统计华北地区销售总额', '华北地区', '销售总额']
+2026-08-13 19:24:54.730 | ERROR    | request_id - 1 | app.agent.nodes.recall_metric:recall_metric:70 - 召回指标信息异常：'metric_qdrant_repository'
+2026-08-13 19:24:54.730 | ERROR    | request_id - 1 | app.agent.nodes.recall_value:recall_value:70 - 召回字段取值异常：'value_es_repository'
+2026-08-13 19:44:40.716 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['华北地区', '统计', '统计华北地区销售总额', '销售总额']
+2026-08-13 19:44:40.719 | ERROR    | request_id - 1 | app.agent.nodes.recall_metric:recall_metric:70 - 召回指标信息异常：'metric_qdrant_repository'
+2026-08-13 19:44:40.719 | ERROR    | request_id - 1 | app.agent.nodes.recall_value:recall_value:70 - 召回字段取值异常：'value_es_repository'
+2026-08-13 20:08:42.502 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['统计华北地区销售总额', '华北地区', '统计', '销售总额']
+2026-08-13 20:08:49.312 | ERROR    | request_id - 1 | app.agent.nodes.recall_column:recall_column:72 - 召回字段信息异常Server error '502 Bad Gateway' for url 'http://localhost:8081'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+2026-08-13 20:21:26.698 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['统计', '销售总额', '华北地区', '统计华北地区销售总额']
+2026-08-13 20:21:44.538 | INFO     | request_id - 1 | app.agent.nodes.recall_column:recall_column:68 - 召回字段信息:['fact_order.order_amount', 'fact_order.order_quantity', 'dim_region.region_name']
+2026-08-13 20:21:56.955 | INFO     | request_id - 1 | app.agent.nodes.recall_value:recall_value:66 - 召回字段取值：['dim_region.region_name.华北']
+2026-08-13 20:21:58.956 | INFO     | request_id - 1 | app.agent.nodes.recall_metric:recall_metric:65 - 召回指标信息:['GMV', 'AOV']
+2026-08-13 20:22:11.918 | INFO     | request_id - 1 | app.agent.nodes.filter_metric:filter_metric:54 - 过滤后的表信息['GMV']
+2026-08-13 20:22:18.925 | INFO     | request_id - 1 | app.agent.nodes.filter_table:filter_table:72 - 过滤后的表信息['fact_order', 'dim_region']
+2026-08-13 20:22:18.938 | INFO     | request_id - 1 | app.agent.nodes.add_extra_context:add_extra_context:36 - 额外上下文信息添加，日期信息{'date': '2026-08-13', 'weekday': 'Thursday', 'quarter': 'Q3'},数据库信息{'version': '8.0.46', 'dialect': 'mysql'}
+2026-08-13 20:22:21.418 | INFO     | request_id - 1 | app.agent.nodes.generate_sql:generate_sql:49 - 生成的sql语句
+：SELECT SUM(fo.order_amount) AS total_sales FROM fact_order fo JOIN dim_region dr ON fo.region_id = dr.region_id WHERE dr.region_name = '华北';
+2026-08-13 20:22:21.442 | INFO     | request_id - 1 | app.agent.nodes.validate_sql:validate_sql:24 - sql验证正确：SELECT SUM(fo.order_amount) AS total_sales FROM fact_order fo JOIN dim_region dr ON fo.region_id = dr.region_id WHERE dr.region_name = '华北';
+2026-08-13 20:22:21.457 | INFO     | request_id - 1 | app.agent.nodes.execute_sql:execute_sql:24 - 执行sql的结果[{'total_sales': 41099.5}]
+2026-08-13 20:27:24.810 | INFO     | request_id - 1 | app.agent.nodes.extract_keywords:extract_keywords:50 - 提取关键字成功：['销售总额', '华北地区', '统计华北地区销售总额', '统计']
+2026-08-13 20:27:28.927 | INFO     | request_id - 1 | app.agent.nodes.recall_column:recall_column:68 - 召回字段信息:['fact_order.order_amount', 'fact_order.order_quantity', 'dim_region.region_name']
+2026-08-13 20:27:29.079 | INFO     | request_id - 1 | app.agent.nodes.recall_metric:recall_metric:65 - 召回指标信息:['GMV', 'AOV']
+2026-08-13 20:27:32.115 | INFO     | request_id - 1 | app.agent.nodes.recall_value:recall_value:66 - 召回字段取值：['dim_region.region_name.华北']
+2026-08-13 20:27:33.945 | INFO     | request_id - 1 | app.agent.nodes.filter_metric:filter_metric:54 - 过滤后的表信息['GMV']
+2026-08-13 20:27:35.346 | INFO     | request_id - 1 | app.agent.nodes.filter_table:filter_table:72 - 过滤后的表信息['fact_order', 'dim_region']
+2026-08-13 20:27:35.359 | INFO     | request_id - 1 | app.agent.nodes.add_extra_context:add_extra_context:36 - 额外上下文信息添加，日期信息{'date': '2026-08-13', 'weekday': 'Thursday', 'quarter': 'Q3'},数据库信息{'version': '8.0.46', 'dialect': 'mysql'}
+2026-08-13 20:27:38.201 | INFO     | request_id - 1 | app.agent.nodes.generate_sql:generate_sql:49 - 生成的sql语句
+：SELECT SUM(o.order_amount) AS total_sales FROM fact_order o JOIN dim_region r ON o.region_id = r.region_id WHERE r.region_name = '华北';
+2026-08-13 20:27:38.207 | INFO     | request_id - 1 | app.agent.nodes.validate_sql:validate_sql:24 - sql验证正确：SELECT SUM(o.order_amount) AS total_sales FROM fact_order o JOIN dim_region r ON o.region_id = r.region_id WHERE r.region_name = '华北';
+2026-08-13 20:27:38.208 | INFO     | request_id - 1 | app.agent.nodes.execute_sql:execute_sql:24 - 执行sql的结果[{'total_sales': 41099.5}]

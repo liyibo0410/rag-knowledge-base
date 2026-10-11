@@ -1,0 +1,508 @@
+INFO:     Started server process [18072]
+INFO:     Waiting for application startup.
+D:\software\PycharmProjects\data-agent\.venv\Lib\site-packages\qdrant_client\async_qdrant_remote.py:225: UserWarning: Qdrant client version 1.18.0 is incompatible with server version 1.16.3. Major versions should match and minor version difference must not exceed 1. Set check_compatibility=False to skip version check.
+  show_warning(
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62396 - "POST /api/query HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:54326 - "POST /api/query HTTP/1.1" 200 OK
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\23329\AppData\Local\Temp\jieba.cache
+Loading model cost 0.392 seconds.
+Prefix dict has been built successfully.
+[32m2026-08-13 20:20:36.501[0m | [1mINFO    [0m | [35mrequest_id - c7f70c83-804c-48e4-bdd2-2d1e0ac90da2[0m | [36mapp.agent.nodes.extract_keywords[0m:[36mextract_keywords[0m:[36m50[0m - [1m提取关键字成功：['统计华北地区销售总额', '销售总额', '华北地区', '统计'][0m
+[32m2026-08-13 20:20:42.233[0m | [1mINFO    [0m | [35mrequest_id - c7f70c83-804c-48e4-bdd2-2d1e0ac90da2[0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m68[0m - [1m召回字段信息:['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity'][0m
+[32m2026-08-13 20:20:42.840[0m | [1mINFO    [0m | [35mrequest_id - c7f70c83-804c-48e4-bdd2-2d1e0ac90da2[0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m65[0m - [1m召回指标信息:['GMV', 'AOV'][0m
+INFO:     127.0.0.1:56378 - "POST /api/query HTTP/1.1" 200 OK
+[32m2026-08-13 20:22:03.802[0m | [1mINFO    [0m | [35mrequest_id - 7d8c66fb-6f82-4332-88db-787658c4ab18[0m | [36mapp.agent.nodes.extract_keywords[0m:[36mextract_keywords[0m:[36m50[0m - [1m提取关键字成功：['统计华北地区销售总额', '销售总额', '华北地区', '统计'][0m
+[32m2026-08-13 20:22:20.577[0m | [1mINFO    [0m | [35mrequest_id - 7d8c66fb-6f82-4332-88db-787658c4ab18[0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m66[0m - [1m召回字段取值：['dim_region.region_name.华北'][0m
+[32m2026-08-13 20:22:22.386[0m | [1mINFO    [0m | [35mrequest_id - 7d8c66fb-6f82-4332-88db-787658c4ab18[0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m65[0m - [1m召回指标信息:['GMV', 'AOV'][0m
+[32m2026-08-13 20:22:30.408[0m | [31m[1mERROR   [0m | [35mrequest_id - c7f70c83-804c-48e4-bdd2-2d1e0ac90da2[0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m70[0m - [31m[1m召回字段取值异常：Expecting value: line 1 column 1 (char 0)[0m
+[32m2026-08-13 20:23:58.745[0m | [31m[1mERROR   [0m | [35mrequest_id - 7d8c66fb-6f82-4332-88db-787658c4ab18[0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m72[0m - [31m[1m召回字段信息异常Expecting value: line 1 column 1 (char 0)[0m
+INFO:     127.0.0.1:53951 - "POST /api/query HTTP/1.1" 200 OK
+[32m2026-08-13 20:26:17.411[0m | [1mINFO    [0m | [35mrequest_id - a821ec6a-07aa-4b5e-95e4-e6b8b16f9dd4[0m | [36mapp.agent.nodes.extract_keywords[0m:[36mextract_keywords[0m:[36m50[0m - [1m提取关键字成功：['销售额', '地区', '统计', '统计2025年各地区销售额'][0m
+[32m2026-08-13 20:26:20.643[0m | [1mINFO    [0m | [35mrequest_id - a821ec6a-07aa-4b5e-95e4-e6b8b16f9dd4[0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m68[0m - [1m召回字段信息:['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity', 'dim_date.year'][0m
+[32m2026-08-13 20:26:22.958[0m | [1mINFO    [0m | [35mrequest_id - a821ec6a-07aa-4b5e-95e4-e6b8b16f9dd4[0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m66[0m - [1m召回字段取值：[][0m
+[32m2026-08-13 20:26:23.056[0m | [1mINFO    [0m | [35mrequest_id - a821ec6a-07aa-4b5e-95e4-e6b8b16f9dd4[0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m65[0m - [1m召回指标信息:['GMV', 'AOV'][0m
+json转换的结果- name: GMV
+  description: 全称Gross Merchandise Value，表示所有订单的成交金额总和。
+  relevant_columns:
+  - fact_order.order_amount
+  alias:
+  - 成交总额
+  - 订单总额
+  - 总销售额
+- name: AOV
+  description: 全称Average Order Value，表示所有订单的成交金额平均值。
+  relevant_columns:
+  - fact_order.order_quantity
+  - fact_order.order_amount
+  alias:
+  - 平均单价
+  - 平均订单金额
+
+[32m2026-08-13 20:26:24.846[0m | [1mINFO    [0m | [35mrequest_id - a821ec6a-07aa-4b5e-95e4-e6b8b16f9dd4[0m | [36mapp.agent.nodes.filter_metric[0m:[36mfilter_metric[0m:[36m54[0m - [1m过滤后的表信息['GMV'][0m
+[32m2026-08-13 20:26:31.434[0m | [1mINFO    [0m | [35mrequest_id - a821ec6a-07aa-4b5e-95e4-e6b8b16f9dd4[0m | [36mapp.agent.nodes.filter_table[0m:[36mfilter_table[0m:[36m72[0m - [1m过滤后的表信息['dim_region', 'fact_order', 'dim_date'][0m
+[32m2026-08-13 20:26:31.449[0m | [1mINFO    [0m | [35mrequest_id - a821ec6a-07aa-4b5e-95e4-e6b8b16f9dd4[0m | [36mapp.agent.nodes.add_extra_context[0m:[36madd_extra_context[0m:[36m36[0m - [1m额外上下文信息添加，日期信息{'date': '2026-08-13', 'weekday': 'Thursday', 'quarter': 'Q3'},数据库信息{'version': '8.0.46', 'dialect': 'mysql'}[0m
+[32m2026-08-13 20:26:34.211[0m | [1mINFO    [0m | [35mrequest_id - a821ec6a-07aa-4b5e-95e4-e6b8b16f9dd4[0m | [36mapp.agent.nodes.generate_sql[0m:[36mgenerate_sql[0m:[36m49[0m - [1m生成的sql语句
+：SELECT r.region_name, SUM(f.order_amount) AS sales FROM fact_order f JOIN dim_date d ON f.date_id = d.date_id JOIN dim_region r ON f.region_id = r.region_id WHERE d.year = 2025 GROUP BY r.region_name[0m
+/* select#1 */ select `dw`.`r`.`region_name` AS `region_name`,sum(`dw`.`f`.`order_amount`) AS `sales` from `dw`.`fact_order` `f` join `dw`.`dim_date` `d` join `dw`.`dim_region` `r` where ((`dw`.`d`.`date_id` = `dw`.`f`.`date_id`) and (`dw`.`f`.`region_id` = `dw`.`r`.`region_id`) and (`dw`.`d`.`year` = 2025)) group by `dw`.`r`.`region_name`
+[32m2026-08-13 20:26:34.224[0m | [1mINFO    [0m | [35mrequest_id - a821ec6a-07aa-4b5e-95e4-e6b8b16f9dd4[0m | [36mapp.agent.nodes.validate_sql[0m:[36mvalidate_sql[0m:[36m24[0m - [1msql验证正确：SELECT r.region_name, SUM(f.order_amount) AS sales FROM fact_order f JOIN dim_date d ON f.date_id = d.date_id JOIN dim_region r ON f.region_id = r.region_id WHERE d.year = 2025 GROUP BY r.region_name[0m
+[32m2026-08-13 20:26:34.232[0m | [1mINFO    [0m | [35mrequest_id - a821ec6a-07aa-4b5e-95e4-e6b8b16f9dd4[0m | [36mapp.agent.nodes.execute_sql[0m:[36mexecute_sql[0m:[36m24[0m - [1m执行sql的结果[{'region_name': '华南', 'sales': 70202.0}, {'region_name': '华东', 'sales': 107373.0}, {'region_name': '华北', 'sales': 41099.5}, {'region_name': '西南', 'sales': 31528.0}, {'region_name': '华中', 'sales': 28957.0}][0m
+INFO:     127.0.0.1:59168 - "GET /api/query HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:59168 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51171 - "POST /api/query HTTP/1.1" 200 OK
+[32m2026-08-13 20:27:33.966[0m | [1mINFO    [0m | [35mrequest_id - 3d12a192-f819-4fd5-9c98-98dfe8dbe4d4[0m | [36mapp.agent.nodes.extract_keywords[0m:[36mextract_keywords[0m:[36m50[0m - [1m提取关键字成功：['销售额', '地区', '统计', '统计2025年各地区销售额'][0m
+[32m2026-08-13 20:27:37.500[0m | [1mINFO    [0m | [35mrequest_id - 3d12a192-f819-4fd5-9c98-98dfe8dbe4d4[0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m65[0m - [1m召回指标信息:['GMV', 'AOV'][0m
+[32m2026-08-13 20:27:40.422[0m | [1mINFO    [0m | [35mrequest_id - 3d12a192-f819-4fd5-9c98-98dfe8dbe4d4[0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m68[0m - [1m召回字段信息:['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity', 'fact_order.date_id'][0m
+[32m2026-08-13 20:27:41.232[0m | [1mINFO    [0m | [35mrequest_id - 3d12a192-f819-4fd5-9c98-98dfe8dbe4d4[0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m66[0m - [1m召回字段取值：[][0m
+json转换的结果- name: GMV
+  description: 全称Gross Merchandise Value，表示所有订单的成交金额总和。
+  relevant_columns:
+  - fact_order.order_amount
+  alias:
+  - 成交总额
+  - 订单总额
+  - 总销售额
+- name: AOV
+  description: 全称Average Order Value，表示所有订单的成交金额平均值。
+  relevant_columns:
+  - fact_order.order_quantity
+  - fact_order.order_amount
+  alias:
+  - 平均单价
+  - 平均订单金额
+
+[32m2026-08-13 20:27:43.363[0m | [1mINFO    [0m | [35mrequest_id - 3d12a192-f819-4fd5-9c98-98dfe8dbe4d4[0m | [36mapp.agent.nodes.filter_metric[0m:[36mfilter_metric[0m:[36m54[0m - [1m过滤后的表信息['GMV'][0m
+[32m2026-08-13 20:27:44.234[0m | [1mINFO    [0m | [35mrequest_id - 3d12a192-f819-4fd5-9c98-98dfe8dbe4d4[0m | [36mapp.agent.nodes.filter_table[0m:[36mfilter_table[0m:[36m72[0m - [1m过滤后的表信息['dim_region', 'fact_order'][0m
+[32m2026-08-13 20:27:44.239[0m | [1mINFO    [0m | [35mrequest_id - 3d12a192-f819-4fd5-9c98-98dfe8dbe4d4[0m | [36mapp.agent.nodes.add_extra_context[0m:[36madd_extra_context[0m:[36m36[0m - [1m额外上下文信息添加，日期信息{'date': '2026-08-13', 'weekday': 'Thursday', 'quarter': 'Q3'},数据库信息{'version': '8.0.46', 'dialect': 'mysql'}[0m
+[32m2026-08-13 20:27:52.402[0m | [1mINFO    [0m | [35mrequest_id - 3d12a192-f819-4fd5-9c98-98dfe8dbe4d4[0m | [36mapp.agent.nodes.generate_sql[0m:[36mgenerate_sql[0m:[36m49[0m - [1m生成的sql语句
+：SELECT r.region_name AS 地区, SUM(f.order_amount) AS 销售额 FROM fact_order f JOIN dim_region r ON f.region_id = r.region_id WHERE f.date_id BETWEEN 20250101 AND 20251231 GROUP BY r.region_name;[0m
+/* select#1 */ select `dw`.`r`.`region_name` AS `地区`,sum(`dw`.`f`.`order_amount`) AS `销售额` from `dw`.`fact_order` `f` join `dw`.`dim_region` `r` where ((`dw`.`f`.`region_id` = `dw`.`r`.`region_id`) and (`dw`.`f`.`date_id` between 20250101 and 20251231)) group by `dw`.`r`.`region_name`
+[32m2026-08-13 20:27:52.409[0m | [1mINFO    [0m | [35mrequest_id - 3d12a192-f819-4fd5-9c98-98dfe8dbe4d4[0m | [36mapp.agent.nodes.validate_sql[0m:[36mvalidate_sql[0m:[36m24[0m - [1msql验证正确：SELECT r.region_name AS 地区, SUM(f.order_amount) AS 销售额 FROM fact_order f JOIN dim_region r ON f.region_id = r.region_id WHERE f.date_id BETWEEN 20250101 AND 20251231 GROUP BY r.region_name;[0m
+[32m2026-08-13 20:27:52.411[0m | [1mINFO    [0m | [35mrequest_id - 3d12a192-f819-4fd5-9c98-98dfe8dbe4d4[0m | [36mapp.agent.nodes.execute_sql[0m:[36mexecute_sql[0m:[36m24[0m - [1m执行sql的结果[{'地区': '华南', '销售额': 70202.0}, {'地区': '华东', '销售额': 107373.0}, {'地区': '华北', '销售额': 41099.5}, {'地区': '西南', '销售额': 31528.0}, {'地区': '华中', '销售额': 28957.0}][0m
+INFO:     127.0.0.1:55800 - "POST /api/query HTTP/1.1" 200 OK
+[32m2026-08-14 08:07:18.713[0m | [1mINFO    [0m | [35mrequest_id - ffdd1f02-125f-49f5-bd65-9262df9f3fba[0m | [36mapp.agent.nodes.extract_keywords[0m:[36mextract_keywords[0m:[36m50[0m - [1m提取关键字成功：['统计2025年各地区销售总额', '地区', '销售总额', '统计'][0m
+[32m2026-08-14 08:07:23.901[0m | [1mINFO    [0m | [35mrequest_id - ffdd1f02-125f-49f5-bd65-9262df9f3fba[0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m66[0m - [1m召回字段取值：[][0m
+[32m2026-08-14 08:07:23.934[0m | [1mINFO    [0m | [35mrequest_id - ffdd1f02-125f-49f5-bd65-9262df9f3fba[0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m65[0m - [1m召回指标信息:['GMV', 'AOV'][0m
+[32m2026-08-14 08:07:27.451[0m | [1mINFO    [0m | [35mrequest_id - ffdd1f02-125f-49f5-bd65-9262df9f3fba[0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m68[0m - [1m召回字段信息:['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity', 'fact_order.date_id'][0m
+json转换的结果- name: GMV
+  description: 全称Gross Merchandise Value，表示所有订单的成交金额总和。
+  relevant_columns:
+  - fact_order.order_amount
+  alias:
+  - 成交总额
+  - 订单总额
+  - 总销售额
+- name: AOV
+  description: 全称Average Order Value，表示所有订单的成交金额平均值。
+  relevant_columns:
+  - fact_order.order_quantity
+  - fact_order.order_amount
+  alias:
+  - 平均单价
+  - 平均订单金额
+
+[32m2026-08-14 08:07:28.883[0m | [1mINFO    [0m | [35mrequest_id - ffdd1f02-125f-49f5-bd65-9262df9f3fba[0m | [36mapp.agent.nodes.filter_metric[0m:[36mfilter_metric[0m:[36m54[0m - [1m过滤后的表信息['GMV'][0m
+[32m2026-08-14 08:07:30.415[0m | [1mINFO    [0m | [35mrequest_id - ffdd1f02-125f-49f5-bd65-9262df9f3fba[0m | [36mapp.agent.nodes.filter_table[0m:[36mfilter_table[0m:[36m72[0m - [1m过滤后的表信息['dim_region', 'fact_order'][0m
+[32m2026-08-14 08:07:30.431[0m | [1mINFO    [0m | [35mrequest_id - ffdd1f02-125f-49f5-bd65-9262df9f3fba[0m | [36mapp.agent.nodes.add_extra_context[0m:[36madd_extra_context[0m:[36m36[0m - [1m额外上下文信息添加，日期信息{'date': '2026-08-14', 'weekday': 'Friday', 'quarter': 'Q3'},数据库信息{'version': '8.0.46', 'dialect': 'mysql'}[0m
+[32m2026-08-14 08:07:33.495[0m | [1mINFO    [0m | [35mrequest_id - ffdd1f02-125f-49f5-bd65-9262df9f3fba[0m | [36mapp.agent.nodes.generate_sql[0m:[36mgenerate_sql[0m:[36m49[0m - [1m生成的sql语句
+：SELECT r.region_name, SUM(f.order_amount) AS total_sales FROM fact_order f JOIN dim_region r ON f.region_id = r.region_id WHERE f.date_id BETWEEN 20250101 AND 20251231 GROUP BY r.region_name;[0m
+/* select#1 */ select `dw`.`r`.`region_name` AS `region_name`,sum(`dw`.`f`.`order_amount`) AS `total_sales` from `dw`.`fact_order` `f` join `dw`.`dim_region` `r` where ((`dw`.`f`.`region_id` = `dw`.`r`.`region_id`) and (`dw`.`f`.`date_id` between 20250101 and 20251231)) group by `dw`.`r`.`region_name`
+[32m2026-08-14 08:07:33.525[0m | [1mINFO    [0m | [35mrequest_id - ffdd1f02-125f-49f5-bd65-9262df9f3fba[0m | [36mapp.agent.nodes.validate_sql[0m:[36mvalidate_sql[0m:[36m24[0m - [1msql验证正确：SELECT r.region_name, SUM(f.order_amount) AS total_sales FROM fact_order f JOIN dim_region r ON f.region_id = r.region_id WHERE f.date_id BETWEEN 20250101 AND 20251231 GROUP BY r.region_name;[0m
+[32m2026-08-14 08:07:33.541[0m | [1mINFO    [0m | [35mrequest_id - ffdd1f02-125f-49f5-bd65-9262df9f3fba[0m | [36mapp.agent.nodes.execute_sql[0m:[36mexecute_sql[0m:[36m24[0m - [1m执行sql的结果[{'region_name': '华南', 'total_sales': 70202.0}, {'region_name': '华东', 'total_sales': 107373.0}, {'region_name': '华北', 'total_sales': 41099.5}, {'region_name': '西南', 'total_sales': 31528.0}, {'region_name': '华中', 'total_sales': 28957.0}][0m
+INFO:     127.0.0.1:61286 - "POST /api/query HTTP/1.1" 200 OK
+[32m2026-08-14 08:16:58.455[0m | [1mINFO    [0m | [35mrequest_id - 974ae213-4d1c-4d5d-9567-ed251ec7740c[0m | [36mapp.agent.nodes.extract_keywords[0m:[36mextract_keywords[0m:[36m50[0m - [1m提取关键字成功：['统计2025年各地区销售总额', '地区', '销售总额', '统计'][0m
+[32m2026-08-14 08:17:01.619[0m | [1mINFO    [0m | [35mrequest_id - 974ae213-4d1c-4d5d-9567-ed251ec7740c[0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m66[0m - [1m召回字段取值：[][0m
+[32m2026-08-14 08:17:03.393[0m | [1mINFO    [0m | [35mrequest_id - 974ae213-4d1c-4d5d-9567-ed251ec7740c[0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m68[0m - [1m召回字段信息:['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity', 'dim_date.year'][0m
+[32m2026-08-14 08:17:03.472[0m | [1mINFO    [0m | [35mrequest_id - 974ae213-4d1c-4d5d-9567-ed251ec7740c[0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m65[0m - [1m召回指标信息:['GMV', 'AOV'][0m
+json转换的结果- name: GMV
+  description: 全称Gross Merchandise Value，表示所有订单的成交金额总和。
+  relevant_columns:
+  - fact_order.order_amount
+  alias:
+  - 成交总额
+  - 订单总额
+  - 总销售额
+- name: AOV
+  description: 全称Average Order Value，表示所有订单的成交金额平均值。
+  relevant_columns:
+  - fact_order.order_quantity
+  - fact_order.order_amount
+  alias:
+  - 平均单价
+  - 平均订单金额
+
+[32m2026-08-14 08:17:05.114[0m | [1mINFO    [0m | [35mrequest_id - 974ae213-4d1c-4d5d-9567-ed251ec7740c[0m | [36mapp.agent.nodes.filter_metric[0m:[36mfilter_metric[0m:[36m54[0m - [1m过滤后的表信息['GMV'][0m
+[32m2026-08-14 08:17:09.809[0m | [1mINFO    [0m | [35mrequest_id - 974ae213-4d1c-4d5d-9567-ed251ec7740c[0m | [36mapp.agent.nodes.filter_table[0m:[36mfilter_table[0m:[36m72[0m - [1m过滤后的表信息['dim_region', 'fact_order', 'dim_date'][0m
+[32m2026-08-14 08:17:09.814[0m | [1mINFO    [0m | [35mrequest_id - 974ae213-4d1c-4d5d-9567-ed251ec7740c[0m | [36mapp.agent.nodes.add_extra_context[0m:[36madd_extra_context[0m:[36m36[0m - [1m额外上下文信息添加，日期信息{'date': '2026-08-14', 'weekday': 'Friday', 'quarter': 'Q3'},数据库信息{'version': '8.0.46', 'dialect': 'mysql'}[0m
+[32m2026-08-14 08:17:12.270[0m | [1mINFO    [0m | [35mrequest_id - 974ae213-4d1c-4d5d-9567-ed251ec7740c[0m | [36mapp.agent.nodes.generate_sql[0m:[36mgenerate_sql[0m:[36m49[0m - [1m生成的sql语句
+：SELECT r.region_name, SUM(f.order_amount) AS GMV FROM fact_order f JOIN dim_region r ON f.region_id = r.region_id JOIN dim_date d ON f.date_id = d.date_id WHERE d.year = 2025 GROUP BY r.region_name;[0m
+/* select#1 */ select `dw`.`r`.`region_name` AS `region_name`,sum(`dw`.`f`.`order_amount`) AS `GMV` from `dw`.`fact_order` `f` join `dw`.`dim_region` `r` join `dw`.`dim_date` `d` where ((`dw`.`f`.`region_id` = `dw`.`r`.`region_id`) and (`dw`.`d`.`date_id` = `dw`.`f`.`date_id`) and (`dw`.`d`.`year` = 2025)) group by `dw`.`r`.`region_name`
+[32m2026-08-14 08:17:12.293[0m | [1mINFO    [0m | [35mrequest_id - 974ae213-4d1c-4d5d-9567-ed251ec7740c[0m | [36mapp.agent.nodes.validate_sql[0m:[36mvalidate_sql[0m:[36m24[0m - [1msql验证正确：SELECT r.region_name, SUM(f.order_amount) AS GMV FROM fact_order f JOIN dim_region r ON f.region_id = r.region_id JOIN dim_date d ON f.date_id = d.date_id WHERE d.year = 2025 GROUP BY r.region_name;[0m
+[32m2026-08-14 08:17:12.313[0m | [1mINFO    [0m | [35mrequest_id - 974ae213-4d1c-4d5d-9567-ed251ec7740c[0m | [36mapp.agent.nodes.execute_sql[0m:[36mexecute_sql[0m:[36m24[0m - [1m执行sql的结果[{'region_name': '华南', 'GMV': 70202.0}, {'region_name': '华东', 'GMV': 107373.0}, {'region_name': '华北', 'GMV': 41099.5}, {'region_name': '西南', 'GMV': 31528.0}, {'region_name': '华中', 'GMV': 28957.0}][0m
+INFO:     127.0.0.1:61286 - "POST /api/query HTTP/1.1" 200 OK
+[32m2026-08-14 08:17:15.705[0m | [1mINFO    [0m | [35mrequest_id - 30cb55b0-8d9c-42a1-8b49-d76b791d1f49[0m | [36mapp.agent.nodes.extract_keywords[0m:[36mextract_keywords[0m:[36m50[0m - [1m提取关键字成功：['统计2025年各地区销售总额', '地区', '销售总额', '统计'][0m
+[32m2026-08-14 08:17:18.053[0m | [1mINFO    [0m | [35mrequest_id - 30cb55b0-8d9c-42a1-8b49-d76b791d1f49[0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m68[0m - [1m召回字段信息:['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity', 'dim_date.year'][0m
+[32m2026-08-14 08:17:18.679[0m | [1mINFO    [0m | [35mrequest_id - 30cb55b0-8d9c-42a1-8b49-d76b791d1f49[0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m65[0m - [1m召回指标信息:['GMV', 'AOV'][0m
+[32m2026-08-14 08:17:19.611[0m | [1mINFO    [0m | [35mrequest_id - 30cb55b0-8d9c-42a1-8b49-d76b791d1f49[0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m66[0m - [1m召回字段取值：[][0m
+json转换的结果- name: GMV
+  description: 全称Gross Merchandise Value，表示所有订单的成交金额总和。
+  relevant_columns:
+  - fact_order.order_amount
+  alias:
+  - 成交总额
+  - 订单总额
+  - 总销售额
+- name: AOV
+  description: 全称Average Order Value，表示所有订单的成交金额平均值。
+  relevant_columns:
+  - fact_order.order_quantity
+  - fact_order.order_amount
+  alias:
+  - 平均单价
+  - 平均订单金额
+
+[32m2026-08-14 08:17:21.170[0m | [1mINFO    [0m | [35mrequest_id - 30cb55b0-8d9c-42a1-8b49-d76b791d1f49[0m | [36mapp.agent.nodes.filter_metric[0m:[36mfilter_metric[0m:[36m54[0m - [1m过滤后的表信息['GMV'][0m
+[32m2026-08-14 08:17:22.234[0m | [1mINFO    [0m | [35mrequest_id - 30cb55b0-8d9c-42a1-8b49-d76b791d1f49[0m | [36mapp.agent.nodes.filter_table[0m:[36mfilter_table[0m:[36m72[0m - [1m过滤后的表信息['dim_region', 'fact_order', 'dim_date'][0m
+[32m2026-08-14 08:17:22.238[0m | [1mINFO    [0m | [35mrequest_id - 30cb55b0-8d9c-42a1-8b49-d76b791d1f49[0m | [36mapp.agent.nodes.add_extra_context[0m:[36madd_extra_context[0m:[36m36[0m - [1m额外上下文信息添加，日期信息{'date': '2026-08-14', 'weekday': 'Friday', 'quarter': 'Q3'},数据库信息{'version': '8.0.46', 'dialect': 'mysql'}[0m
+[32m2026-08-14 08:17:23.952[0m | [1mINFO    [0m | [35mrequest_id - 30cb55b0-8d9c-42a1-8b49-d76b791d1f49[0m | [36mapp.agent.nodes.generate_sql[0m:[36mgenerate_sql[0m:[36m49[0m - [1m生成的sql语句
+：SELECT r.region_name, SUM(f.order_amount) AS GMV
+FROM fact_order f
+JOIN dim_region r ON f.region_id = r.region_id
+JOIN dim_date d ON f.date_id = d.date_id
+WHERE d.year = 2025
+GROUP BY r.region_name;[0m
+/* select#1 */ select `dw`.`r`.`region_name` AS `region_name`,sum(`dw`.`f`.`order_amount`) AS `GMV` from `dw`.`fact_order` `f` join `dw`.`dim_region` `r` join `dw`.`dim_date` `d` where ((`dw`.`f`.`region_id` = `dw`.`r`.`region_id`) and (`dw`.`d`.`date_id` = `dw`.`f`.`date_id`) and (`dw`.`d`.`year` = 2025)) group by `dw`.`r`.`region_name`
+[32m2026-08-14 08:17:23.956[0m | [1mINFO    [0m | [35mrequest_id - 30cb55b0-8d9c-42a1-8b49-d76b791d1f49[0m | [36mapp.agent.nodes.validate_sql[0m:[36mvalidate_sql[0m:[36m24[0m - [1msql验证正确：SELECT r.region_name, SUM(f.order_amount) AS GMV
+FROM fact_order f
+JOIN dim_region r ON f.region_id = r.region_id
+JOIN dim_date d ON f.date_id = d.date_id
+WHERE d.year = 2025
+GROUP BY r.region_name;[0m
+[32m2026-08-14 08:17:23.958[0m | [1mINFO    [0m | [35mrequest_id - 30cb55b0-8d9c-42a1-8b49-d76b791d1f49[0m | [36mapp.agent.nodes.execute_sql[0m:[36mexecute_sql[0m:[36m24[0m - [1m执行sql的结果[{'region_name': '华南', 'GMV': 70202.0}, {'region_name': '华东', 'GMV': 107373.0}, {'region_name': '华北', 'GMV': 41099.5}, {'region_name': '西南', 'GMV': 31528.0}, {'region_name': '华中', 'GMV': 28957.0}][0m
+INFO:     127.0.0.1:59783 - "POST /api/query HTTP/1.1" 200 OK
+[32m2026-08-14 08:20:05.901[0m | [1mINFO    [0m | [35mrequest_id - 7ddaef5a-e178-4188-a136-f02b17c56530[0m | [36mapp.agent.nodes.extract_keywords[0m:[36mextract_keywords[0m:[36m50[0m - [1m提取关键字成功：['统计2025年各地区销售总额', '地区', '销售总额', '统计'][0m
+[32m2026-08-14 08:20:08.790[0m | [1mINFO    [0m | [35mrequest_id - 7ddaef5a-e178-4188-a136-f02b17c56530[0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m68[0m - [1m召回字段信息:['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity', 'dim_date.year'][0m
+[32m2026-08-14 08:20:09.320[0m | [1mINFO    [0m | [35mrequest_id - 7ddaef5a-e178-4188-a136-f02b17c56530[0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m65[0m - [1m召回指标信息:['GMV', 'AOV'][0m
+[32m2026-08-14 08:20:34.137[0m | [1mINFO    [0m | [35mrequest_id - 7ddaef5a-e178-4188-a136-f02b17c56530[0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m66[0m - [1m召回字段取值：[][0m
+json转换的结果- name: GMV
+  description: 全称Gross Merchandise Value，表示所有订单的成交金额总和。
+  relevant_columns:
+  - fact_order.order_amount
+  alias:
+  - 成交总额
+  - 订单总额
+  - 总销售额
+- name: AOV
+  description: 全称Average Order Value，表示所有订单的成交金额平均值。
+  relevant_columns:
+  - fact_order.order_quantity
+  - fact_order.order_amount
+  alias:
+  - 平均单价
+  - 平均订单金额
+
+[32m2026-08-14 08:20:35.894[0m | [1mINFO    [0m | [35mrequest_id - 7ddaef5a-e178-4188-a136-f02b17c56530[0m | [36mapp.agent.nodes.filter_metric[0m:[36mfilter_metric[0m:[36m54[0m - [1m过滤后的表信息['GMV'][0m
+[32m2026-08-14 08:20:37.060[0m | [1mINFO    [0m | [35mrequest_id - 7ddaef5a-e178-4188-a136-f02b17c56530[0m | [36mapp.agent.nodes.filter_table[0m:[36mfilter_table[0m:[36m72[0m - [1m过滤后的表信息['dim_region', 'fact_order', 'dim_date'][0m
+[32m2026-08-14 08:20:37.063[0m | [1mINFO    [0m | [35mrequest_id - 7ddaef5a-e178-4188-a136-f02b17c56530[0m | [36mapp.agent.nodes.add_extra_context[0m:[36madd_extra_context[0m:[36m36[0m - [1m额外上下文信息添加，日期信息{'date': '2026-08-14', 'weekday': 'Friday', 'quarter': 'Q3'},数据库信息{'version': '8.0.46', 'dialect': 'mysql'}[0m
+[32m2026-08-14 08:20:39.142[0m | [1mINFO    [0m | [35mrequest_id - 7ddaef5a-e178-4188-a136-f02b17c56530[0m | [36mapp.agent.nodes.generate_sql[0m:[36mgenerate_sql[0m:[36m49[0m - [1m生成的sql语句
+：SELECT r.region_name, SUM(f.order_amount) AS total_sales
+FROM fact_order f
+JOIN dim_region r ON f.region_id = r.region_id
+JOIN dim_date d ON f.date_id = d.date_id
+WHERE d.year = 2025
+GROUP BY r.region_name;[0m
+/* select#1 */ select `dw`.`r`.`region_name` AS `region_name`,sum(`dw`.`f`.`order_amount`) AS `total_sales` from `dw`.`fact_order` `f` join `dw`.`dim_region` `r` join `dw`.`dim_date` `d` where ((`dw`.`f`.`region_id` = `dw`.`r`.`region_id`) and (`dw`.`d`.`date_id` = `dw`.`f`.`date_id`) and (`dw`.`d`.`year` = 2025)) group by `dw`.`r`.`region_name`
+[32m2026-08-14 08:20:39.147[0m | [1mINFO    [0m | [35mrequest_id - 7ddaef5a-e178-4188-a136-f02b17c56530[0m | [36mapp.agent.nodes.validate_sql[0m:[36mvalidate_sql[0m:[36m24[0m - [1msql验证正确：SELECT r.region_name, SUM(f.order_amount) AS total_sales
+FROM fact_order f
+JOIN dim_region r ON f.region_id = r.region_id
+JOIN dim_date d ON f.date_id = d.date_id
+WHERE d.year = 2025
+GROUP BY r.region_name;[0m
+[32m2026-08-14 08:20:39.149[0m | [1mINFO    [0m | [35mrequest_id - 7ddaef5a-e178-4188-a136-f02b17c56530[0m | [36mapp.agent.nodes.execute_sql[0m:[36mexecute_sql[0m:[36m24[0m - [1m执行sql的结果[{'region_name': '华南', 'total_sales': 70202.0}, {'region_name': '华东', 'total_sales': 107373.0}, {'region_name': '华北', 'total_sales': 41099.5}, {'region_name': '西南', 'total_sales': 31528.0}, {'region_name': '华中', 'total_sales': 28957.0}][0m
+INFO:     127.0.0.1:65164 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65171 - "GET /api/systems HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65173 - "POST /api/login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65178 - "POST /api/login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65180 - "GET /api/me HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65182 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65187 - "GET /static/app.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65195 - "GET /static/app.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65197 - "POST /api/logout HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65199 - "GET /api/systems HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65018 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65020 - "GET /api/systems HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65022 - "POST /api/login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65024 - "POST /api/login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65029 - "GET /api/me HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65031 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65033 - "GET /static/app.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65035 - "GET /static/app.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65037 - "POST /api/logout HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65039 - "GET /api/systems HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52765 - "GET /api/theme HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52765 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61034 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:61034 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65270 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65274 - "GET /static/manifest.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65275 - "POST /api/guest-login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65276 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59283 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:50570 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62217 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:51358 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:65534 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:63828 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:58074 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:64858 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:59898 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:61162 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:51747 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62185 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:56778 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:53540 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:63543 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:59603 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:49850 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62659 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:60030 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:59284 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62524 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:56787 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:61213 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:55258 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:57321 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62142 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:61117 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:61527 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:65113 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:60637 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62165 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:56008 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:56197 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:51016 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:54786 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:63374 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:51441 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:56228 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:51440 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:58967 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:53038 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:57577 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:61109 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:52973 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62189 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:51370 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:54317 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:51461 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:60815 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:55324 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:49332 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:63963 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:49530 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:63170 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:52452 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:57799 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:59836 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:61897 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:53520 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:61227 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:53613 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:55959 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:52467 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:59670 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:59357 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:51611 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:57047 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:59957 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62892 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:60350 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:61734 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:60654 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:65464 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:54149 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:54137 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:55456 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:50829 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:63371 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:61647 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:61109 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:64880 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:59751 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:55199 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:52173 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:57291 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:52650 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:55071 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:50081 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:58424 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:63874 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:60381 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:59872 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:56770 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:50801 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:64999 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62026 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:58919 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:58662 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:60946 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:64916 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:58985 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:58798 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:60527 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:50077 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:49880 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:55151 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:52483 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:55741 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:57069 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:64802 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:55889 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:57197 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:58047 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:64152 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:59974 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62198 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:57283 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:64878 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62519 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:53390 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:59639 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:62846 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:55332 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:64077 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:65020 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:60267 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:51721 - "WebSocket /ws/eb8d2580-d4e1-4276-a4d2-f985e10bdd4c" 403
+INFO:     connection rejected (403 Forbidden)
+INFO:     127.0.0.1:49989 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49993 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49995 - "POST /api/task HTTP/1.1" 404 Not Found
